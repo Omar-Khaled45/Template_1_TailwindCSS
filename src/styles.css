@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #10cab7;
+    --color-secBackground: #f6f6f6;
+    --color-bodyText: #777;
+    --color-titleHeader: #ebeced;
+    --color-titleSpan: #797979;
+  }
+  @media (prefers-color-scheme: dark) {
+    .dark {
+      --color-primary: #10cab7;
+      --color-secBackground: #f6f6f6;
+      --color-bodyText: #777;
+      --color-titleHeader: #ebeced;
+      --color-titleSpan: #797979;
+    }
+  }
+  section {
+    @apply py-[60px];
+  }
+}
+
+@layer components {
+  /* Section Title */
+  .sec-title {
+    @apply text-center text-white;
+  }
+  .sec-title h1 {
+    @apply text-[60px] sm:text-[100px] text-titleHeader font-extrabold tracking-tight;
+  }
+  .sec-title span {
+    @apply block mt-[-35px] sm:mt-[-55px] text-[16px] sm:text-[20px] text-titleSpan;
+  }
+  .img-container {
+    @apply md:basis-1/4 mb-[60px] md:mb-0 relative lg:before:content-[''] lg:before:w-[100px] lg:before:h-[calc(100%+100px)] lg:before:absolute lg:before:bg-[#EBECED] lg:before:-z-10 lg:before:top-[-50px] lg:before:left-[-30px] lg:after:content-[''] lg:after:w-[200px] lg:after:h-[420px] lg:after:border-l-[80px] lg:after:border-b-[80px] lg:after:border-primary lg:after:absolute lg:after:-z-10 lg:after:top-[-40px] lg:after:right-[-150px];
+  }
+
+  /* Menu Toggle */
+  .clicked span:first-child,
+  .clicked span:last-child {
+    @apply top-[9px];
+  }
+  .clicked span:first-child {
+    @apply rotate-[45deg];
+  }
+  .clicked span:nth-child(2) {
+    @apply opacity-0 invisible;
+  }
+  .clicked span:last-child {
+    @apply rotate-[-45deg];
+  }
+}

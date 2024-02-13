@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./public/styles.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ebd76f2816.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-body">
+    <!-- Start Header -->
+    <header>
+      <nav
+        class="container px-[15px] flex justify-between items-center h-[72px] relative"
+      >
+        <div class="logo">
+          <img src="./public/assets/logo.png" alt="logo" class="w-16" />
+        </div>
+        <div id="burger" class="md:hidden cursor-pointer h-[20px] w-8 relative">
+          <span
+            class="w-full block rounded-full h-1 absolute top-0 bg-bodyText transition-all duration-300"
+          ></span>
+          <span
+            class="w-full block rounded-full h-1 absolute top-[9px] bg-bodyText transition-all duration-300"
+          ></span>
+          <span
+            class="w-full block rounded-full h-1 absolute top-[18px] bg-bodyText transition-all duration-300"
+          ></span>
+        </div>
+        <ul
+          class="w-[200px] hidden bg-secBackground shadow-lg absolute top-[70px] right-[15px] rounded-md z-20 md:block md:flex md:static md:w-auto md:shadow-none md:bg-white before:content-[''] before:border-[10px] before:border-b-secBackground before:border-t-transparent before:border-r-transparent before:border-l-transparent before:absolute before:top-[-20px] before:right-[5px]"
+        >
+          <li>
+            <a href="#" class="p-4 block border-b border-[#ddd] md:border-none"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#" class="p-4 block border-b border-[#ddd] md:border-none"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#" class="p-4 block border-b border-[#ddd] md:border-none"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="p-4 block">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero Section -->
+    <section
+      id="hero"
+      class="h-[calc(100vh-72px)] bg-[url('./assets/hero.jpg')] bg-cover bg-no-repeat flex justify-center items-center relative"
+    >
+      <div
+        class="overlay w-full h-full absolute dark:bg-black/50 inset-0 z-10"
+      ></div>
+      <div class="text-center z-20">
+        <h1 class="text-[50px] text-primary font-bold">Hello There</h1>
+        <p class="text-[19px] mt-[19px] leading-relaxed text-bodyText">
+          We are Leon - Super Creative & <br />
+          Minimal Agency Web Template
+        </p>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Second Section -->
+    <section id="second" class="bg-secBackground">
+      <div class="container">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="p-5 text-center">
+            <i class="fa-solid fa-wand-magic-sparkles fa-3x text-primary"></i>
+            <h3 class="font-extrabold my-[30px] text-[19px]">
+              Tell Us Your Idea
+            </h3>
+            <p class="text-bodyText leading-[1.8] text-[17px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut lab
+            </p>
+          </div>
+          <div class="p-5 text-center">
+            <i class="fa-regular fa-gem fa-3x text-primary"></i>
+            <h3 class="font-extrabold my-[30px] text-[19px]">
+              We Will Do All The Work
+            </h3>
+            <p class="text-bodyText leading-[1.8] text-[17px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut lab
+            </p>
+          </div>
+          <div class="p-5 text-center">
+            <i class="fa-solid fa-earth-asia fa-3x text-primary"></i>
+            <h3 class="font-extrabold my-[30px] text-[19px]">
+              Your Product is Worldwide
+            </h3>
+            <p class="text-bodyText leading-[1.8] text-[17px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut lab
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Second Section -->
+
+    <!-- Start Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="sec-title">
+          <h1>Services</h1>
+          <span>Don't be busy, be productive</span>
+        </div>
+        <div class="flex items-center mt-[100px] mb-0 xl:mb-[70px]">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div
+              class="card flex flex-col text-center md:text-start md:flex-row"
+            >
+              <i
+                class="fa-solid fa-palette fa-2x text-primary basis-[60px]"
+              ></i>
+              <div class="flex-1">
+                <h3 class="text-[19px] font-bold mb-[20px]">Graphic Design</h3>
+                <p class="text-bodyText font-light">
+                  Graphic design is the process of visual communication and
+                  problem-solving using one or more of typography, photography
+                  and illustration.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col text-center md:text-start md:flex-row"
+            >
+              <i
+                class="fa-solid fa-vector-square fa-2x text-primary basis-[60px]"
+              ></i>
+              <div class="flex-1">
+                <h3 class="text-[19px] font-bold mb-[20px]">Web Design</h3>
+                <p class="text-bodyText font-light">
+                  Web design encompasses many different skills and disciplines
+                  in the production and maintenance of websites.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col text-center md:text-start md:flex-row"
+            >
+              <i class="fa-solid fa-gem fa-2x text-primary basis-[60px]"></i>
+              <div class="flex-1">
+                <h3 class="text-[19px] font-bold mb-[20px]">UI & UX</h3>
+                <p class="text-bodyText font-light">
+                  Process of enhancing user satisfaction with a product by
+                  improving the usability, accessibility, and pleasure provided
+                  in the interaction.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card flex flex-col text-center md:text-start md:flex-row"
+            >
+              <i
+                class="fa-solid fa-palette fa-2x text-primary basis-[60px]"
+              ></i>
+              <div class="flex-1">
+                <h3 class="text-[19px] font-bold mb-[20px]">Web Development</h3>
+                <p class="text-bodyText font-light">
+                  Web development is a broad term for the work involved in
+                  developing a web site for the Internet or an intranet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Image Container -->
+          <div
+            class="w-3/6 relative hidden xl:block before:content-[''] before:w-[100px] before:h-[calc(100%+100px)] before:bg-[#2c4755] before:absolute before:top-[-50px] before:right-[-50px] before:-z-10"
+          >
+            <img
+              src="./public/assets/services.jpg"
+              alt="Services"
+              class="w-full ml-5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start Portfolio Section -->
+    <section id="portfolio" class="bg-secBackground">
+      <div class="container">
+        <div class="sec-title">
+          <h1>Portfolio</h1>
+          <span>If you do it right, it will last forever</span>
+        </div>
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7 mt-20">
+          <div
+            class="bg-white rounded-lg shadow-lg transition duration-300 lg:hover:shadow-xl lg:hover:-translate-y-3 overflow-hidden"
+          >
+            <img src="./public/assets/portfolio-1.jpg" alt="Portfolio 1" />
+            <div class="p-5">
+              <h3 class="font-extrabold text-[19px]">Project Here</h3>
+              <p class="text-bodyText leading-normal mt-4">
+                My creative ability is very difficult to measure because it can
+                manifest in so many surprising and.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg transition duration-300 lg:hover:shadow-xl lg:hover:-translate-y-3 overflow-hidden"
+          >
+            <img src="./public/assets/portfolio-2.jpg" alt="Portfolio 2" />
+            <div class="p-5">
+              <h3 class="font-extrabold text-[19px]">Project Here</h3>
+              <p class="text-bodyText leading-normal mt-4">
+                My creative ability is very difficult to measure because it can
+                manifest in so many surprising and.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg transition duration-300 lg:hover:shadow-xl lg:hover:-translate-y-3 overflow-hidden"
+          >
+            <img src="./public/assets/portfolio-3.jpg" alt="Portfolio 3" />
+            <div class="p-5">
+              <h3 class="font-extrabold text-[19px]">Project Here</h3>
+              <p class="text-bodyText leading-normal mt-4">
+                My creative ability is very difficult to measure because it can
+                manifest in so many surprising and.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- Start About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="sec-title">
+          <h1>About</h1>
+          <span>Less is more work</span>
+        </div>
+        <div
+          class="mt-[100px] mb-0 md:mb-[70px] flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="img-container w-[250px] after:content-['']">
+            <img src="./public/assets/about.jpg" alt="About" class="w-full" />
+          </div>
+          <div class="basis-1/2 text-center md:text-start">
+            <p class="mb-[50px] font-bold leading-loose">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              nemo neque voluptate tempora velit cum non, fuga vitae architecto
+              delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi
+              iusto laudantium!
+            </p>
+            <hr class="h-[5px] w-3/6 bg-primary mx-auto md:mx-0" />
+            <p class="text-bodyText my-4 leading-loose">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              sapiente. Velit iure exercitationem dolores nesciunt dolore. Eum
+              officiis dolorum hic voluptate quaerat minima, similique inventore
+              esse, alias, sed quo officia?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Start Contact Section -->
+    <section id="contact" class="bg-secBackground">
+      <div class="container">
+        <div class="sec-title">
+          <h1>Contact</h1>
+          <span>We are born to create</span>
+        </div>
+        <div class="py-[60px] text-center">
+          <h2
+            class="font-extrabold text-[#2C4755] text-[35px] tracking-tighter"
+          >
+            Feel free to drop us a line at:
+          </h2>
+          <h3 class="font-extrabold text-primary text-[35px]">
+            leonagency@mail.com
+          </h3>
+          <div class="mt-4">
+            Find Us on Social Networks:
+            <i class="fa-brands fa-facebook-f ml-1"></i>
+            <i class="fa-brands fa-youtube ml-1"></i>
+            <i class="fa-brands fa-x-twitter ml-1"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer -->
+    <footer class="p-[30px] text-center bg-[#2C4755]">
+      <div class="text-[18px] text-white">
+        &copy 2021 <span class="text-primary font-bold">Leon</span> All Right
+        Reserved
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scroll to Top Button -->
+    <div
+      id="scrollTop"
+      class="w-[50px] h-[50px] rounded-full bg-primary text-white fixed bottom-[15px] right-[15px] shadow-lg cursor-pointer flex items-center justify-center hidden"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="./public/main.js"></script>
+  </body>
+</html>
